@@ -1,9 +1,12 @@
 import Functions
+import System.IO
 
 main :: IO ()
 main = do
+    hSetEncoding stdout utf8
     -- 1. Hello, world
     putStrLn "Привіт! Це моя перша програма на функціональній мові."
+    putStrLn "square 5 = 25"
 
     -- 2. Виклик чистих функцій
     print ("square 5 = " ++ show (square 5))
